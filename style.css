@@ -1,8 +1,10 @@
 :root {
-    --color-background-page:rgb(243,243,243);
+    --color-background-page: rgb(27, 26, 26);
     --color-background-button-login:rgb(0, 149, 246);
-    --color-text-logout:rgb(0, 149, 246);
-    --color-text-not-account:rgb(0, 149, 246)rgb(160, 160, 160);
+    --color-text-login:white;
+    --color-text-logout:#ED041A;
+    --color-text-get-app: white;
+    --color-text-not-account:rgb(27, 26, 26);
     --color-text-sign-up:rgb(0, 149, 246);
     --color-box-group: white;
     --color-box-group-border: lightgray;
@@ -17,7 +19,7 @@
     font-size: 14px;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     background-color: var(--color-background-page);
@@ -39,7 +41,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .instagram-phone img{
@@ -53,6 +54,12 @@ body{
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
+    font-weight: 600;
+}
+
+.instagram-continue a:nth-child(3){
+    color: var(--color-text-login)
+    font-size: medium;
 }
 
 .group {
@@ -64,6 +71,10 @@ body{
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid var(--color-box-group-border);
+}
+
+.group a:nth-child(2) {
+    color: var(--color-text-logout);
 }
 
 .group:nth-child(1) {
@@ -100,10 +111,12 @@ body{
 
 .not-account {
     color: var(--color-text-not-account);
+    font-size: medium;
 }
 
 .link-blue {
     color:var(--color-text-sign-up);
+    font-size: medium;
 }
 
 .get-the-app {
@@ -113,6 +126,9 @@ body{
     justify-content: center;
     width: 100%;
     padding: 1.3rem 0;
+    color: var(--color-text-get-app);
+    font-size: medium;
+    font-weight: 600;
 }
 
 .download {
