@@ -1,13 +1,13 @@
 :root {
-    --color-background-page: rgb(27, 26, 26);
+    --color-background-page: rgb(20, 20, 24);
     --color-background-button-login:rgb(0, 149, 246);
-    --color-text-login:white;
-    --color-text-logout:#ED041A;
-    --color-text-get-app: white;
-    --color-text-not-account:rgb(27, 26, 26);
+    --color-text-login:rgb(255, 255, 255);
+    --color-text-logout:rgb(237, 4, 26);
+    --color-text-get-app: rgb(255, 255, 255);
+    --color-text-not-account:rgb(211, 211, 211);
     --color-text-sign-up:rgb(0, 149, 246);
-    --color-box-group: white;
-    --color-box-group-border: lightgray;
+    --color-box-group: rgb(18, 18, 20);
+    --color-box-group-border: rgb(43, 45, 51);
 }
 
 *{
@@ -15,7 +15,7 @@
     margin: 0;
     box-sizing: 0;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-size: 14px;
 }
 
@@ -38,13 +38,25 @@ body {
 }
 
 .instagram-phone {
-    display: flex;
+    display: block;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
 
-.instagram-phone img{
+.instagram-phone .instagram-phone-background {
     height: 50rem;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.instagram-phone .instagram-phone-feed {
+    height: 20rem;
+    position: absolute;
+    top: 100px;
+    left: 151px;
+    z-index: 1;
 }
 
 .instagram-continue {
@@ -52,14 +64,8 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: 50%;
+    width: 70rem;
     min-height: 34rem;
-    font-weight: 600;
-}
-
-.instagram-continue a:nth-child(3){
-    color: var(--color-text-login)
-    font-size: medium;
 }
 
 .group {
@@ -67,9 +73,11 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin-top: 2vh;
     background-color: var(--color-box-group);
     width: 100%;
     padding: 1.3rem 0;
+    border-radius: 10px;
     border: 1px solid var(--color-box-group-border);
 }
 
@@ -81,8 +89,13 @@ body {
     min-width: 19rem;
 }
 
+.group a:hover{
+    filter: contrast(200%);
+}
+
 .instagram-logo {
     height: 3rem;
+    filter: invert();
 }
 
 .profile-photo {
@@ -94,29 +107,42 @@ body {
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 8rem;
 }
 
 .instagram-login {
     background-color: var(--color-background-button-login);
-    color:var(--color-box-group);
-    padding: 8px;
+    color:var(--color-text-login);
+    width: 8rem;
+    height: 3rem;
+    padding: 2px;
     border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .instagram-logout {
     color:var(--color-text-logout);
-    margin-top: 1rem;
+    margin-top: 1.5vh;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 .not-account {
+    margin-top: 1vh;
     color: var(--color-text-not-account);
-    font-size: medium;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .link-blue {
+    margin-top: 2vh;
     color:var(--color-text-sign-up);
-    font-size: medium;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .get-the-app {
@@ -124,29 +150,37 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 1.3rem 0;
-    color: var(--color-text-get-app);
-    font-size: medium;
-    font-weight: 600;
+    width: 25vw;
+    padding: 0.5rem 0;
 }
 
-.download {
-    display: flex;
-    width: 100%;
+.get-app {
+    color: var(--color-text-get-app);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.get-the-app .download {
+    margin-top: 1vh;;
+    display: flex;;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 1rem;
+}
+
+.download a:hover{
+    filter: contrast(130%);
 }
 
 .app-download {
     height: 3rem;
     width: 10rem;
-    background-size: cover;
+    margin: 0.5rem;
+    background-size: contain;
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./icons/apple-store.png');
+    background-image: url('./icons/apple-store.png');   
 }
 
 .app-download:nth-child(2) {
