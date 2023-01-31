@@ -18,10 +18,10 @@
 
 ### Resultados:
 <h4>Desktop: 1350px X 655px</h4>
-<img src="https://github.com/HenriqueMAP/instagram-clone-initial-interface/blob/master/dark-theme-UI-desktop.png" width="900" />
+<img src="https://github.com/henriqueotogami/instagram-clone-initial-interface/blob/master/dark-theme-UI-desktop.png" width="900" />
 
 <h4>Mobile: 375px X 677px</h4>
-<img src="https://github.com/HenriqueMAP/instagram-clone-initial-interface/blob/master/dark-theme-ui-mobile.png" width="400" />
+<img src="https://github.com/henriqueotogami/instagram-clone-initial-interface/blob/master/dark-theme-ui-mobile.png" width="400" />
 
 ### Aprendizado:
 #### HTML5
